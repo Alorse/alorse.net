@@ -19,14 +19,6 @@ h2 {
 p {
     margin-bottom: 20px;
 }
-.md-theme-dark.md-button:not([disabled]).md-primary.md-raised, .md-theme-dark.md-button:not([disabled]).md-primary.md-fab {
-    background-color: #ffa726;
-    color: rgba(0, 0, 0, 0.87);
-}
-.md-theme-dark :not(input):not(textarea)::selection {
-    background-color: #ffa726;
-    color: rgba(0, 0, 0, 0.87);
-}
 .md-theme-dark .entity-picture .hexagon-border {
     background-color: #5E626B;
 }
@@ -42,7 +34,7 @@ section:not(.profile){
     border-top: 3px solid var(--theme-color);
     padding: 24px;
 }
-.container{
+.container {
     width:100%;
     max-width:960px;
     margin: 100px auto;
@@ -72,6 +64,29 @@ section:not(.profile){
 .profile__location, .languages-box__title, p {
     color: #cccccc;
 }
+.contact-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contact-link a {
+    width: 80px;
+    height: 70px;
+    text-decoration: none;
+    color: #ffa726;
+    font-size: small;
+    line-height: 25px;
+    transition: background-color .6s;
+    display:table-cell;
+    vertical-align: middle;
+}
+.contact-link a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.contact-link a i {
+    position: relative;
+    color: #ffa726;
+}
 .languages-box__chips {
     margin-top: 20px;
 }
@@ -93,7 +108,7 @@ section:not(.profile){
     display: inline-block;
     transition: all 1s cubic-bezier(.25,.8,.25,2);
 }
-.summary-contact-info a i {
+.md-button i {
     min-width: 40px;
     line-height: 24px;
     font-size: x-large;
